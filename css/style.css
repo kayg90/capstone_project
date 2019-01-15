@@ -1,0 +1,168 @@
+/* Universal Styles */
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: white;
+}
+
+body {
+  line-height: 1.4rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Header */
+
+header {
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+header span {
+  font-size: 1.5rem;
+}
+
+em {
+  font-weight: bold;
+}
+
+header img {
+  padding-left: 1.5rem;
+}
+
+nav {
+  padding: 1rem 0;
+  justify-content: space-between;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  margin-right: 1.5rem;
+}
+
+ul li {
+  display: inline;
+  padding: 0.5rem;
+}
+
+/* Main */
+
+.main {
+  /* display: flex; */
+  padding-top: 4rem;
+  background-color: gray;
+}
+
+.column1 {
+  width: 60%;
+  padding: 2rem 1.5rem;
+
+}
+
+.column1 img, video {
+  width: 100%;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  padding-left: 1rem;
+}
+
+.column2 h1,
+h3,
+button {
+  width: 80%;
+  line-height: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+button {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Second Section */
+
+.second {
+  padding-bottom: 2rem;
+}
+
+.second .column1 {
+  justify-content: space-between;
+}
+
+.information {
+  display: inline;
+  padding-top: 2rem;
+}
+
+ .info {
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  border: 1px black solid;
+}
+
+.image-container {
+  width: 35%;
+}
+
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+  padding-left: 1rem;
+}
+
+/* Third Container */
+
+.courses .flex {
+  flex-direction: row;
+  padding: 2rem 3rem;
+}
