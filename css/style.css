@@ -65,7 +65,6 @@ header img {
 }
 
 nav {
-  padding: 0.5rem 1rem;
   justify-content: space-between;
   width: 100%;
 }
@@ -194,10 +193,10 @@ button {
   width: 100%;
 }
 
-.details div * {
-  color: red;
-}
-
 footer nav {
   justify-content: space-between;
+}
+
+footer nav h4 {
+  padding-left: 1.5rem;
 }
