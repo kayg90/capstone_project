@@ -84,7 +84,6 @@ ul li {
 /* Main */
 
 .main {
-  /* display: flex; */
   padding-top: 4rem;
   background-color: gray;
 }
@@ -104,7 +103,6 @@ ul li {
   flex-direction: column;
   justify-content: center;
   width: 40%;
-  padding-left: 1rem;
 }
 
 .column2 h1,
@@ -132,37 +130,70 @@ button {
 
 .information {
   display: inline;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
 
  .info {
   display: flex;
-  align-items: center;
-  padding-left: 0.5rem;
+  padding: 0.5rem;
   border: 1px black solid;
 }
 
 .image-container {
-  width: 35%;
+  flex: 3.5;
 }
 
 
-.image-container img {
+.image-container img, video {
   width: 100%;
   height: auto;
 }
 
 .details {
+  flex: 6.5;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 65%;
   padding-left: 1rem;
 }
 
 /* Third Container */
+.courses {
+  background-color: gray;
+}
 
-.courses .flex {
-  flex-direction: row;
-  padding: 2rem 3rem;
+.title {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  
+}
+
+.course-list {
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.course {
+  width: 25%;
+  margin: 1rem;
+  background-color: white;
+  border: 1px black solid;
+}
+
+.course h3 {
+  font-weight: 200;
+}
+
+.image img {
+  width: 100%;
+}
+
+.details div * {
+  color: red;
+}
+
+footer nav {
+  justify-content: space-between;
 }
