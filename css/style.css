@@ -10,8 +10,8 @@ body {
 }
 
 .container {
-  max-width: 960px;
-  margin: auto;
+  /* max-width: 960px; */
+  /* margin: auto; */
 }
 
 .flex {
@@ -63,7 +63,7 @@ header img {
 }
 
 nav {
-  padding: 1rem 0;
+  padding: 0.5rem 1rem;
   justify-content: space-between;
 }
 
