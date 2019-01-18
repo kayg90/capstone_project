@@ -83,6 +83,26 @@ ul li {
   padding: 0.5rem;
 }
 
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+  .logo,
+  .menu {
+    display: none;
+  }
+
+  .mobile {
+    display: inline-flex;
+    flex: 1;
+    justify-content: space-around;
+  }
+}
+
 /* Main */
 
 .main {
@@ -96,7 +116,8 @@ ul li {
 
 }
 
-.column1 img, video {
+.column1 img,
+video {
   width: 100%;
 }
 
@@ -117,7 +138,26 @@ button {
 
 button {
   padding: 0.5rem;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    display: block;
+  }
+  .column1 {
+    padding: 0;
+    width: 100%;
+  }
+
+  .main .column2 {
+    width: 100%; 
+    padding: 1.5rem 1rem;
+    text-align: left;
+  }
+  button {
+    width: 95%;
+  }
 }
 
 /* Second Section */
@@ -135,7 +175,7 @@ button {
   padding-top: 1.5rem;
 }
 
- .info {
+.info {
   display: flex;
   padding: 0.5rem;
   border: 1px black solid;
@@ -147,7 +187,8 @@ button {
 }
 
 
-.image-container img, video {
+.image-container img,
+video {
   width: 100%;
   height: auto;
 }
@@ -160,6 +201,28 @@ button {
   padding-left: 1rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .second .column1 {
+    display: none;
+  }
+  /* .second .desktop {
+    display: none;
+  } */
+  .second .column2 {
+    width: 100%;
+  }
+  .second {
+    padding-bottom: 0;
+  }
+  .second .info {
+    display: block;
+    padding: 2rem 1rem;
+  }
+  .information {
+    padding-top: 0;
+  }
+}
+
 /* Third Container */
 .courses {
   background-color: gray;
@@ -169,7 +232,7 @@ button {
   padding-top: 2rem;
   padding-bottom: 1rem;
   text-align: center;
-  
+
 }
 
 .course-list {
@@ -193,10 +256,48 @@ button {
   width: 100%;
 }
 
+@media only screen and (max-width: 600px){
+  .courses {
+    background-color: white;
+  }
+  .courses .mobile {
+    display: block;
+  }
+  .mobile .details {
+    background-color: gray;
+    padding: 1rem;
+    margin: 0.5rem;
+  } 
+  .mobile .details h3 {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .fourth .column1 {
+    width: 100%;
+  }
+  .fourth .column2 {
+    display: none;
+  }
+  .fourth .column1 h3, p {
+    display: none;
+  }
+  video {
+    padding-bottom: 1.5rem;
+  }
+}
+
 footer nav {
   justify-content: space-between;
 }
 
 footer nav h4 {
   padding-left: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  footer h4 {
+    padding: 1rem;
+  }
 }
