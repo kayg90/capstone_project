@@ -1,8 +1,16 @@
+/* Color Options */
+html {
+  color: #1F6555;
+  color: #942D3D;
+  color: #ceb888;
+}
+
 /* Universal Styles */
 html {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Aleo', serif;
   font-size: 16px;
   background-color: white;
+  color: #942D3D;
 }
 
 body {
@@ -35,6 +43,10 @@ h4 {
   font-size: 1rem;
 }
 
+a {
+  color: #942D3D;
+}
+
 /* Header */
 
 header {
@@ -42,9 +54,10 @@ header {
   width: 100%;
   position: fixed;
   z-index: 1;
-  background-color: white;
+  background-color: #942D3D;
   display: flex;
   align-items: center;
+  color: #ceb888;
 }
 
 header span {
@@ -53,6 +66,7 @@ header span {
 
 em {
   font-weight: bold;
+  color: black;
 }
 
 header img {
@@ -76,6 +90,12 @@ ul {
 ul li {
   display: inline;
   padding: 0.5rem;
+  cursor: pointer;
+  transition: font-size linear 200ms;
+}
+
+ul li:hover {
+  font-size: 1.25rem;
 }
 
 .mobile {
@@ -86,6 +106,7 @@ ul li {
   .desktop {
     display: none;
   }
+
   .logo,
   .menu {
     display: none;
@@ -102,7 +123,7 @@ ul li {
 
 .main {
   padding-top: 4rem;
-  background-color: gray;
+  background-color: #f3ede1;
 }
 
 .column1 {
@@ -121,35 +142,53 @@ video {
   flex-direction: column;
   justify-content: center;
   width: 40%;
+  
 }
 
 .column2 h1,
 h3,
 button {
   width: 80%;
-  line-height: 1.5rem;
+  line-height: 2rem;
   padding: 0.5rem 0;
 }
 
 button {
   padding: 0.5rem;
   margin-top: 1rem;
+  border-radius: 4px;
+  background-color: #942D3D;
+  color: #ceb888;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 200ms linear, 
+              font-size 500ms ease-in 200ms,
+              box-shadow 500ms ease-in;
+}
+
+button:hover {
+  background-color: #6E212D;
+  font-size: 1.25rem;
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 21px 0 rgba(0,0,0,0.19);
 }
 
 @media only screen and (max-width: 600px) {
   .main {
     display: block;
   }
+
   .column1 {
     padding: 0;
     width: 100%;
   }
 
   .main .column2 {
-    width: 100%; 
+    width: 100%;
     padding: 1.5rem 1rem;
     text-align: left;
   }
+
   button {
     width: 95%;
   }
@@ -173,7 +212,11 @@ button {
 .info {
   display: flex;
   padding: 0.5rem;
-  border: 1px black solid;
+  transition: background-color 200ms linear 200ms;
+}
+
+.info:hover {
+  background-color: #f3ede1;
 }
 
 .image-container {
@@ -194,25 +237,30 @@ video {
   flex-direction: column;
   justify-content: center;
   padding-left: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 @media only screen and (max-width: 600px) {
   .second .column1 {
     display: none;
   }
+
   /* .second .desktop {
     display: none;
   } */
   .second .column2 {
     width: 100%;
   }
+
   .second {
     padding-bottom: 0;
   }
+
   .second .info {
     display: block;
     padding: 2rem 1rem;
   }
+
   .information {
     padding-top: 0;
   }
@@ -220,7 +268,7 @@ video {
 
 /* Third Container */
 .courses {
-  background-color: gray;
+  background-color: #f3ede1;
 }
 
 .title {
@@ -239,8 +287,15 @@ video {
 .course {
   width: 25%;
   margin: 1rem;
-  background-color: white;
-  border: 1px black solid;
+  background-color: #942D3D;
+  color: #ceb888;
+  /* border: 1px black solid; */
+  transition: background-color 200ms linear,
+              font-size;
+}
+
+.course:hover {
+  background-color: #B75363;
 }
 
 .course h3 {
@@ -251,18 +306,27 @@ video {
   width: 100%;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
   .courses {
     background-color: white;
   }
+
   .courses .mobile {
     display: block;
   }
+
   .mobile .details {
-    background-color: gray;
+    background-color: #942D3D;
+    color: #ceb888;
     padding: 1rem;
     margin: 0.5rem;
-  } 
+    transition: background-color 200ms linear;
+  }
+
+  .mobile .details:hover {
+    background-color: #B75363;
+  }
+
   .mobile .details h3 {
     padding: 0;
   }
@@ -272,15 +336,25 @@ video {
   .fourth .column1 {
     width: 100%;
   }
+
   .fourth .column2 {
     display: none;
   }
-  .fourth .column1 h3, p {
+
+  .fourth .column1 h3,
+  p {
     display: none;
   }
+
   video {
     padding-bottom: 1.5rem;
   }
+}
+
+/* Footer */
+
+footer {
+  background-color: #f3ede1;
 }
 
 footer nav {
