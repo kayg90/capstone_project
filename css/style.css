@@ -58,6 +58,7 @@ header {
   display: flex;
   align-items: center;
   color: #ceb888;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 header span {
@@ -103,10 +104,6 @@ ul li:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  .desktop {
-    display: none;
-  }
-
   .logo,
   .menu {
     display: none;
@@ -142,7 +139,7 @@ video {
   flex-direction: column;
   justify-content: center;
   width: 40%;
-  
+
 }
 
 .column2 h1,
@@ -161,16 +158,16 @@ button {
   color: #ceb888;
   font-size: 1rem;
   font-weight: bold;
-  transition: background-color 200ms linear, 
-              font-size 500ms ease-in 200ms,
-              box-shadow 500ms ease-in;
+  transition: background-color 200ms linear,
+    font-size 500ms ease-in 200ms,
+    box-shadow 500ms ease-in;
 }
 
 button:hover {
   background-color: #6E212D;
   font-size: 1.25rem;
   cursor: pointer;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 21px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media only screen and (max-width: 600px) {
@@ -212,7 +209,7 @@ button:hover {
 .info {
   display: flex;
   padding: 0.5rem;
-  transition: background-color 200ms linear 200ms;
+  transition: background-color 200ms linear;
 }
 
 .info:hover {
@@ -241,13 +238,10 @@ video {
 }
 
 @media only screen and (max-width: 600px) {
-  .second .column1 {
-    display: none;
-  }
-
-  /* .second .desktop {
+  /* .second .column1 {
     display: none;
   } */
+
   .second .column2 {
     width: 100%;
   }
@@ -291,7 +285,7 @@ video {
   color: #ceb888;
   /* border: 1px black solid; */
   transition: background-color 200ms linear,
-              font-size;
+    font-size;
 }
 
 .course:hover {
@@ -337,17 +331,11 @@ video {
     width: 100%;
   }
 
-  .fourth .column2 {
-    display: none;
-  }
-
-  .fourth .column1 h3,
-  p {
-    display: none;
-  }
-
   video {
     padding-bottom: 1.5rem;
+  }
+  .desktop {
+    display: none;
   }
 }
 
@@ -369,4 +357,5 @@ footer nav h4 {
   footer h4 {
     padding: 1rem;
   }
+
 }
