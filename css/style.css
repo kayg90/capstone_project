@@ -1,10 +1,3 @@
-/* Color Options */
-html {
-  color: #1F6555;
-  color: #942D3D;
-  color: #ceb888;
-}
-
 /* Universal Styles */
 html {
   font-family: 'Aleo', serif;
@@ -238,10 +231,6 @@ video {
 }
 
 @media only screen and (max-width: 600px) {
-  /* .second .column1 {
-    display: none;
-  } */
-
   .second .column2 {
     width: 100%;
   }
@@ -283,7 +272,6 @@ video {
   margin: 1rem;
   background-color: #942D3D;
   color: #ceb888;
-  /* border: 1px black solid; */
   transition: background-color 200ms linear,
     font-size;
 }
