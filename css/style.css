@@ -101,7 +101,9 @@ ul li:hover {
   .menu {
     display: none;
   }
-
+  header img {
+    padding-left: 0;
+  }
   .mobile {
     display: inline-flex;
     flex: 1;
@@ -180,7 +182,7 @@ button:hover {
   }
 
   button {
-    width: 95%;
+    width: 93%;
   }
 }
 
